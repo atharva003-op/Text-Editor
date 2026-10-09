@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">MyLogo</h1>
+
+        <div class="nav-actions">
+            <a href="#output">Show Data</a>
+            <button class="theme" id="theme">Dark Theme</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+
+            <textarea
+                id="text"
+                placeholder="Type something here..."
+                aria-label="Enter your text"
+            ></textarea>
+
+            <div class="counter">
+                <h2>Character Count:</h2>
+                <span id="counter">0</span>
+            </div>
+
+        </section>
+
+        <section class="btns">
+            <button class="btn" id="upper">Uppercase</button>
+            <button class="btn" id="lower">Lowercase</button>
+            <button class="color red" id="red">Red</button>
+            <button class="color blue" id="blue">Blue</button>
+            <button class="submit" id="submit">Submit</button>
+        </section>
+
+        <section class="output-section" id="output">
+            <h2>Your Submitted Text</h2>
+            <p id="result">Nothing submitted yet.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
